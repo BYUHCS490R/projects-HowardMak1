@@ -1,0 +1,11 @@
+main p {
+    color: rgb(31, 11, 150);
+    font-size: larger;
+}
+header p {
+    background-color: rgb(57, 158, 74);
+    font-weight: bolder;
+}
+header h1 {
+    color: brown;
+}
