@@ -1,0 +1,16 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main p {
+    color: brown;
+}
+#A {
+    color: blue;
+}
+.larger {
+    font-size: x-large;
+}
+.red {
+    color: red;
+}
