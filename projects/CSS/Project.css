@@ -1,0 +1,23 @@
+.points {
+    background-color: rgb(86, 77, 161);
+}
+
+.bold {
+    font-weight: bold;
+}
+#back {
+    background-color: rgb(154, 120, 199);
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(46, 121, 46);
+}
+
+body p {
+    color: rgb(15, 19, 88);
+}
+
+#blue {
+    color: rgb(15, 19, 88);
+}
