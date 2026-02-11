@@ -1,0 +1,18 @@
+
+body {
+    background-image: url(win.jpg);
+    background-repeat: repeat;
+    color: azure;
+}
+.deco {
+    background-image: url(tree.jpg);
+    background-repeat: no-repeat;
+    height: 80px;
+    color: black;
+    font-weight: bolder;
+    background-position: right;
+}
+.list {
+    list-style-image: url(flo.png);
+    color: black;
+}
