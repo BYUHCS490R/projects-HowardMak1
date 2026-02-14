@@ -1,0 +1,19 @@
+#bas {
+    list-style-image: url(baske.jpg);
+}
+.color {
+    color: black;
+}
+body {
+    background-image: url(BAsk.jpg);
+    background-repeat: repeat;
+}
+#deco {
+    background-image: url(NBA.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 80px;
+}
+main {
+    color: rgb(3, 3, 0)
+}
