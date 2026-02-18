@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: cadetblue;
+}
+
+main {
+    background-color: burlywood;
+}
+
+footer {
+    background-color: palevioletred;
+}
+
+.mainp {
+    background-color: aqua;
+    margin: 50px;
+    padding: 35px;
+}
