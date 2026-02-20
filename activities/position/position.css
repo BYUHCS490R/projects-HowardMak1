@@ -1,0 +1,32 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tree {
+    width: 150px;
+    border: thin solid black;
+}
+
+.tree img {
+    width: 150px;
+}
+
+.stop {
+    clear: both;
+}
+
+.float {
+    float: right;
+}
+
+.place {
+    position: relative;
+    top: 16px;
+    left: 50px;
+}
+
+.abso {
+    position: fixed;
+    top: 0px;
+    margin: 0px;
+}
