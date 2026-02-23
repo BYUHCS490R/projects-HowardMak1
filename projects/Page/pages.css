@@ -1,0 +1,50 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: cadetblue;
+}
+
+.back {
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 50px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: aqua;
+    color: black;
+    padding: 5px;
+    border-bottom: thin solid white;
+    margin: 5px;
+    text-decoration: none
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: black;
+    color: aqua;
+}
+
+.place {
+    float: left;
+    
+}
+
+.co {
+    border: thin solid orangered;
+    width: 200px;
+}
+
+.stop {
+    clear: both;
+}
+
+#wrapper {
+    width: 300px;
+    background-color: azure;
+    margin: auto;
+    border: thin solid black;
+    box-shadow: -10px 5px 2px;
+    
+}
