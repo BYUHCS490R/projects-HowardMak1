@@ -1,0 +1,36 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-columns: 20% 40% 20%;
+    grid-template-rows: 2fr 5fr 1fr;
+    grid-template-areas: "header header header"
+    "side main main"
+    "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: side;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.box {
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 20% 40% 20% ;
+    gap: 3px;
+}
