@@ -1,0 +1,35 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    display: block;
+    padding: 5px;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    background-color: aquamarine;
+    margin: 3px;
+    border: thin solid black;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#parent {
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    gap: 5px;
+    flex-flow: row wrap;
+}
+.highlight {
+    order: -1;
+}
