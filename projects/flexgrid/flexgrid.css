@@ -1,0 +1,58 @@
+header {
+    border-top: thin solid black;
+    background-color: aquamarine;
+    height: 75px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(205, 231, 222);
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 40% 20% 40%;
+}
+
+#link {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.parent {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+}
+
+#left {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: aquamarine;
+    flex-direction: column;
+}
+
+.tree {
+    width: 100px;
+    border: thin solid black;
+    display: grid; 
+    text-align: center;
+}
+
+.grid {
+    display: block;
+}
+
+.tree img {
+    width: 100px;
+}
