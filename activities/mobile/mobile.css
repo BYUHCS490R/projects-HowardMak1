@@ -69,6 +69,38 @@ nav a:hover {
     width: 100%;
 }
 
+@media ONLY screen AND (max-width: 300px) {
+    body {
+        background-color: rgb(105, 177, 105);
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        border-bottom: thin solid white;
+    }
+    .main-row {
+        flex-direction: column-reverse;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .row {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .card {
+        width: 95%;
+    }
+    .main-card {
+        order: -1;
+    }
+}
+
+
+
+
+
 @media ONLY print{
     body {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
