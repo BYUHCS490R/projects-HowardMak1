@@ -1,0 +1,128 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    margin-top: 50px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+    background-color: cadetblue;
+}
+
+main {
+    display: flex;
+}
+
+#sidebar img {       
+    border-radius: 4px;
+}
+
+#sidebar figure {
+    text-align: center;
+}
+
+#sidebar ul {
+    padding-left: 20px;
+}
+
+nav {
+    background-color: darkkhaki;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: khaki;
+}
+
+.card {
+    border: thin solid black;
+    width: 220px;
+    box-shadow: 5px 5px 3px black;
+    border-radius: 5px;
+    display: flex; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: row wrap;
+    gap: 15px;
+}
+
+.cardfig {
+    margin: 0;
+    background-color: burlywood;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 3px 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardfig img {
+    width: 100%;
+}
+@media ONLY screen AND (max-width: 500px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar {
+        order: 2;
+        width: 100%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        border-bottom: thin solid white;
+    }
+     .main-row {
+        flex-direction: column;
+        order: 1;
+    }
+    .row {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .card {
+        width: 95%;
+    }
+.wrapper, 
+    body { 
+        display: flex;
+        flex-direction: column; 
+    }
+   
+}
+
+
+
+@media ONLY print{
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+    }
+    nav {
+        display: none;
+    }
+}
