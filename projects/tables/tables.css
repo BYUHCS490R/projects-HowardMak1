@@ -1,0 +1,65 @@
+nav {
+    background-color: darkkhaki;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: khaki;
+}
+
+header {
+    background-color: cadetblue;
+}
+
+.table {
+  border-spacing: 0;
+  border: thin solid black;
+  width: 100%;
+  width: 350px;
+  height: 350px;
+}
+
+.table thead, .table tfoot {
+  background-color: rgb(117, 228, 132);
+}
+
+.table td {
+  border: 1px solid rgb(9, 10, 10);
+  vertical-align: center;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: rgb(172, 172, 60);
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: rgb(105, 194, 83);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+
+.side {
+    border:  thin solid black;
+    border-radius: 4px;
+    width: 200px;
+    flex: 0 0 20%;
+    padding: 15px;
+}
+
+#caption {
+    font-size: 25px;
+    font-weight: bolder;
+}
