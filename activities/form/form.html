@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Forms</title>
     <link rel="stylesheet" href="form.css">
 </head>
@@ -12,27 +12,31 @@
     </header>
     <main>
         <form action="formpro.html" method="post">
-            <div>
+            <fieldset>
+                <legend>Form</legend>
+            <div class="form-row">
                 <label for="fname">Name:</label>
                 <input type="text" name="fullname" id="fname" placeholder="Full Name" required>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="name@gmail.com" required>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="pass">Password:</label>
                 <input type="password" name="password" id="pass" placeholder="********" required>
             </div>
-            <div>
+            <div class="check-row">
+                <div class="spacer"></div>
                 <label for="Gender">Gender:</label>
                 <label><input type="radio" name="gender" value="male">Male</label>
                 <label><input type="radio" name="gender" value="female">Female</label>
             </div>
-            <div>
+            <div class="check-row">
+                <div class="spacer"></div>
                 <label><input type="checkbox" name="remember" value="male" checked>Remeber this device?</label>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="state">State</label>
                 <select name="state" id="state">
                     <option value="blank">-</option>
@@ -41,13 +45,15 @@
                     <option value="UT">Utah</option>
                 </select>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="comments">Comments</label>
                 <textarea name="comments" id="comments">-</textarea>
             </div>
-            <div>
+            <div class="form-row">
+                <div class="spacer"></div>
                 <input type="submit" value="Sign Up">
             </div>
+            </fieldset>
         </form>
         <h3>Post can't get our data. something change on the server in database</h3>
         <h3>Get can get our data. </h3>

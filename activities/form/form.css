@@ -1,0 +1,39 @@
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+input[type='submit'] {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: blue;
+    color: aliceblue;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+    .form-row label {
+        text-align: left;
+    }
+    .spacer {
+        text-align: left;
+    }
+}
