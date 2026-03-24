@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Project</h1>
+    </header>
+    <main>
+        <form action="formpro.html" method="post">
+            <fieldset>
+                <legend>Available for Sign Up</legend>
+            <div class="form-row">
+                <label for="fname">Name:</label>
+                <input type="text" name="fullname" id="fname" placeholder="Full Name" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="name@gmail.com" required>
+            </div>
+            <div class="form-row">
+                <label for="pass">Password:</label>
+                <input type="password" name="password" id="pass" placeholder="********" required>
+            </div>
+            <div class="form-row">
+                <label for="date">Birthday:</label>
+                <input type="date" name="Birthday" id="date" required>
+            </div>
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label for="Gender">Gender:</label>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+            <div class="form-row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank">-</option>
+                    <option value="CA">California</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="Phone">Phone:</label>
+                <input type="tel" name="Phone" id="number" placeholder="+1 (808) 123-4567" required>
+            </div>
+            <div class="form-row">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments">-</textarea>
+            </div>
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label><input type="checkbox" name="remember" value="male" checked>Agree to this Term</label>
+            </div>
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label><input type="checkbox" name="remember" value="male" checked>Remeber this device?</label>
+            </div>
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit" value="Sign Up">
+            </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Howard Mak</p>
+    </footer>
+</body>
+</html>

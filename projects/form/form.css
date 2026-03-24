@@ -1,0 +1,52 @@
+body {
+    background-color: darkkhaki;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+legend {
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgb(89, 153, 206);
+}
+
+fieldset {
+    background-color: rgb(124, 124, 117);
+
+}
+
+.form-row, .check-row {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px
+}
+
+.form-row label {
+    width: 100px;
+    text-align: right
+}
+
+.spacer {
+    width: 100px;
+    text-align: right;
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type='submit'] {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(79, 161, 199);
+    color: aliceblue;
+}
+
+@media ONLY screen AND (max-width: 450px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+    .form-row label, .spacer {
+        text-align: left;
+    }
+}
