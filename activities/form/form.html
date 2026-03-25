@@ -11,20 +11,24 @@
         <h1>Howard Web</h1>
     </header>
     <main>
-        <form action="formpro.html" method="post">
+        <form action="formpro.html" method="get" id="myform">
             <fieldset>
                 <legend>Form</legend>
             <div class="form-row">
                 <label for="fname">Name:</label>
-                <input type="text" name="fullname" id="fname" placeholder="Full Name" required>
+                <input type="text" name="fullname" id="fname" placeholder="Full Name">
             </div>
             <div class="form-row">
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="name@gmail.com" required>
+                <input type="email" name="email" id="email" placeholder="name@gmail.com">
             </div>
             <div class="form-row">
                 <label for="pass">Password:</label>
-                <input type="password" name="password" id="pass" placeholder="********" required>
+                <input type="password" name="password" id="pass" placeholder="********">
+            </div>
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age">
             </div>
             <div class="check-row">
                 <div class="spacer"></div>
@@ -55,11 +59,38 @@
             </div>
             </fieldset>
         </form>
-        <h3>Post can't get our data. something change on the server in database</h3>
-        <h3>Get can get our data. </h3>
     </main>
     <footer>
         <p>&copy; 2026 Howard Mak</p>
     </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit',function(event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById('fname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname || !email) {
+                alert("you need a name and emaill");
+                return;
+            }
+
+            if (!age || age <18) {
+                alert("you need to be 18");
+                return;
+            }
+
+            const formdata = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            console.log(formdata);
+        });
+    </script>
 </body>
 </html>
