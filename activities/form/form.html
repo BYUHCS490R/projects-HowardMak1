@@ -11,6 +11,7 @@
         <h1>Howard Web</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="formpro.html" method="get" id="myform">
             <fieldset>
                 <legend>Form</legend>
@@ -60,47 +61,16 @@
             </fieldset>
         </form>
         <ul>
-            <li>What is JavaScript? How did it get its name?</li>
-            <p>JavaScript is a programming language used to make websites interactive. JavaScript got its name mainly for marketing reasons, not because it's actually related to Java.</p>
-            <li>What are the two ways you can run JavaScript?</li>
-            <p>In a web browser runs directly on websites or On a server using Node.js lets JavaScript run outside the browser</p>
-            <li>What was the most popular front-end JS library?</li>
-            <p>The most popular front-end JavaScript library for a long time was jQuery.</p>
-            <li>What is the most popular front-end JS library today?</li>
-            <p>the most popular front-end library is React</p>
+            <li>What is AJAX?</li>
+            <p>AJAX stands for Asynchronous JavaScript and JSON</p>
+            <li>Why do you put your JS Code in a separate file?</li>
+            <p>You can use the same script across multiple pages, Cleaner HTML and Easier to manage and update code</p>
         </ul>
     </main>
     <footer>
         <p>&copy; 2026 Howard Mak</p>
     </footer>
-    <script>
-        document.getElementById('myform').addEventListener('submit',function(event) {
-            event.preventDefault();
-
-            const fullname = document.getElementById('fname').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('pass').value;
-            const age = document.getElementById('age').value;
-
-            if (!fullname || !email) {
-                alert("you need a name and emaill");
-                return;
-            }
-
-            if (!age || age <18) {
-                alert("you need to be 18");
-                return;
-            }
-
-            const formdata = {
-                name: fullname,
-                email: email,
-                password: password,
-                age: age
-            };
-
-            console.log(formdata);
-        });
-    </script>
+    <script src="form.js"></script>
+    
 </body>
 </html>
