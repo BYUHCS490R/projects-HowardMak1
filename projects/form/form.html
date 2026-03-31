@@ -11,24 +11,28 @@
         <h1>Project</h1>
     </header>
     <main>
-        <form action="formpro.html" method="post">
+        <form action="formpro.html" method="get" id="myform">
             <fieldset>
                 <legend>Available for Sign Up</legend>
             <div class="form-row">
                 <label for="fname">Name:</label>
-                <input type="text" name="fullname" id="fname" placeholder="Full Name" required>
+                <input type="text" name="fullname" id="fname" placeholder="Full Name">
             </div>
             <div class="form-row">
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="name@gmail.com" required>
+                <input type="email" name="email" id="email" placeholder="name@gmail.com">
             </div>
             <div class="form-row">
                 <label for="pass">Password:</label>
-                <input type="password" name="password" id="pass" placeholder="********" required>
+                <input type="password" name="password" id="pass" placeholder="********">
             </div>
             <div class="form-row">
                 <label for="date">Birthday:</label>
                 <input type="date" name="Birthday" id="date" required>
+            </div>
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" readonly>
             </div>
             <div class="check-row">
                 <div class="spacer"></div>
@@ -47,7 +51,7 @@
             </div>
             <div class="form-row">
                 <label for="Phone">Phone:</label>
-                <input type="tel" name="Phone" id="number" placeholder="+1 (808) 123-4567" required>
+                <input type="tel" name="Phone" id="number" placeholder="+1 (808) 123-4567">
             </div>
             <div class="form-row">
                 <label for="comments">Comments</label>
@@ -71,5 +75,6 @@
     <footer>
         <p>&copy; 2026 Howard Mak</p>
     </footer>
+    <script src="form.js" ></script>
 </body>
 </html>
