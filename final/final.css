@@ -185,6 +185,7 @@ form {
         flex-direction: column;
     }
     #sidebar {
+        order: 2;
         width: 100%;
     }
     nav {
